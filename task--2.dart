@@ -47,19 +47,40 @@ void main(){
   }
 }*/
 
-/*import 'dart:io';
+import 'dart:io';
 
 void main(){
   stdout.write('your marks please');
   int marks = int.parse(stdin.readLineSync()!);
   switch(marks){
-    case(1):{
-      marks>80 && marks<100;
-        print("A+$marks");
+    case int n when(n>80&&n<100):{
+      print('A+');
     }
     break;
-   default: { print("Invalid choice"); }
+    case int n when(n>70&&n<89):{
+      print('A');
+    }
+    break;
+    case int n when(n>70&&n<79):{
+    print('A-');
+  }
+  break;
+    case int n when(n>60&&n<69):{
+      print('A');
+    }
+    break;
+    case int n when(n>50&&n<59):{
+      print('B');
+    }
+    case int n when(n>40&&n<49):{
+      print('B-');
+    }
+    case int n when(n>33&&n<39):{
+      print('C');
+    }
+    break;
+   default: { print("You Fail ,,, Please Try Next Time "); }
   break;
   }
 
-}*/
+}
