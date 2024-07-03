@@ -3,6 +3,7 @@ import 'dart:io';
 import 'encaptulation.dart';
 
 class Flutter{
+  //for useing pyramid
   first_piramid(){
     print('This is first piramid');
     for(int i =0;i<=5;i++){
@@ -33,6 +34,7 @@ class Flutter{
   }
 }
 class Dart extends Flutter{
+  //add,min,mul,div method
   addition(int a ,int b){
     return( a+b);
   }
@@ -45,6 +47,7 @@ class Dart extends Flutter{
   division(int a , int b){
     return(a/b);
   }
+  //use switch statment
   switchstament(){
   stdout.write('your marks please');
   int marks = int.parse(stdin.readLineSync()!);
