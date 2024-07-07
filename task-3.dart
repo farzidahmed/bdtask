@@ -32,11 +32,14 @@ class Flutter{
       print('You fail ...Try next time');
     }
   }
+  addition(int a ,int b){
+    print( a+b);
+  }
 }
 class Dart extends Flutter{
   //add,min,mul,div method
   addition(int a ,int b){
-    return( a+b);
+    print( a-b);
   }
   minus(int a , int b){
     return(a-b);
@@ -86,11 +89,12 @@ class Dart extends Flutter{
 }
 void main(){
   Dart task = Dart();
-  print(task.first_piramid());
+  //print(task.first_piramid());
   print(task.addition(10, 10));
-  print(task.minus(10, 5));
+  print(task.addition(10, 50));
+  /*print(task.minus(10, 5));
   print(task.multiplication(10, 5));
   print(task.division(10, 2));
   print(task.marks());
-  print(task.switchstament());
+  print(task.switchstament());*/
 }
